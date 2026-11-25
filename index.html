@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOLF STUDIO SHADOW 2026年12月スケジュール</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif; background: #FAF7F1; color: #191B19; }
+  header { background: #0C3B2E; color: #FAF7F1; padding: 20px 16px 16px; text-align: center; }
+  header .brand { font-size: 13px; letter-spacing: 3px; color: #C9A959; }
+  header h1 { font-size: 22px; margin-top: 6px; font-weight: 700; }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; padding: 14px 12px 4px; }
+  .filters button { background: #fff; border: 2px solid #0C3B2E; color: #0C3B2E; font-size: 14px; font-weight: 700; padding: 8px 14px; cursor: pointer; border-radius: 0; }
+  .filters button.active { background: #0C3B2E; color: #FAF7F1; }
+  .cal { max-width: 860px; margin: 12px auto 28px; padding: 0 8px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; table-layout: fixed; }
+  th, td { border: 1px solid #B9BDB9; vertical-align: top; }
+  th { font-size: 14px; padding: 8px 0; background: #F1EDE3; }
+  th.sun { color: #C1272D; }
+  th.sat { color: #2456A6; }
+  td { height: 108px; padding: 5px 5px 6px; font-size: 12px; }
+  td .date { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+  td.sun .date { color: #C1272D; }
+  td.sat .date { color: #2456A6; }
+  td.dim { background: #F4F2EC; }
+  .shift { margin-bottom: 5px; line-height: 1.45; transition: opacity .15s; }
+  .shift .name { font-weight: 700; }
+  .shift .time { color: #444; }
+  .event { color: #C1272D; font-weight: 700; line-height: 1.4; margin-bottom: 3px; }
+  .closed { color: #2456A6; font-weight: 700; font-size: 13px; }
+  .closed-green { color: #5A8F3E; font-weight: 700; font-size: 13px; }
+  body.filtered .shift { opacity: .12; }
+  body.filtered .shift.hit { opacity: 1; }
+  footer { text-align: center; font-size: 12px; color: #666; padding: 0 12px 28px; }
+  @media (max-width: 560px) {
+    td { height: 96px; font-size: 10.5px; padding: 4px 3px; }
+    td .date { font-size: 13px; }
+    header h1 { font-size: 19px; }
+    .closed, .closed-green { font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">GOLF STUDIO SHADOW</div>
+  <h1>2026年12月 インストラクタースケジュール</h1>
+</header>
+
+<div class="filters" id="filters">
+  <button data-coach="" class="active">全員</button>
+  <button data-coach="影山">影山コーチ</button>
+  <button data-coach="徳原">徳原コーチ</button>
+  <button data-coach="鳥居">鳥居コーチ</button>
+  <button data-coach="筒井">筒井コーチ</button>
+</div>
+
+<div class="cal">
+<table>
+  <tr><th class="sun">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="sat">土</th></tr>
+  <tr>
+    <td class="dim"></td>
+    <td class="dim"></td>
+    <td><div class="date">1</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜15</span></div><div class="shift" data-coach="徳原"><span class="name">徳原コーチ</span><br><span class="time">15〜21</span></div></td>
+    <td><div class="date">2</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜16</span></div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">16〜21</span></div></td>
+    <td><div class="date">3</div><div class="event">SHADOW LADIES</div><div class="closed">休業日</div></td>
+    <td><div class="date">4</div><div class="shift" data-coach="徳原"><span class="name">徳原コーチ</span><br><span class="time">10〜16</span></div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">16〜21</span></div></td>
+    <td class="sat"><div class="date">5</div><div class="shift" data-coach="筒井"><span class="name">筒井コーチ</span><br><span class="time">10〜15</span></div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">15〜20</span></div></td>
+  </tr>
+  <tr>
+    <td class="sun"><div class="date">6</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜15</span></div><div class="shift" data-coach="徳原"><span class="name">徳原コーチ</span><br><span class="time">15〜20</span></div></td>
+    <td><div class="date">7</div><div class="event">月例杯</div><div class="closed-green">定休日</div></td>
+    <td><div class="date">8</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜15</span></div><div class="shift" data-coach="徳原"><span class="name">徳原コーチ</span><br><span class="time">15〜21</span></div></td>
+    <td><div class="date">9</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜16</span></div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">16〜21</span></div></td>
+    <td><div class="date">10</div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">10〜17</span></div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">17〜21</span></div></td>
+    <td><div class="date">11</div><div class="event">月例杯</div><div class="shift" data-coach="徳原"><span class="name">徳原コーチ</span><br><span class="time">10〜16</span></div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">16〜21</span></div></td>
+    <td class="sat"><div class="date">12</div><div class="shift" data-coach="筒井"><span class="name">筒井コーチ</span><br><span class="time">10〜20</span></div></td>
+  </tr>
+  <tr>
+    <td class="sun"><div class="date">13</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜20</span></div></td>
+    <td><div class="date">14</div><div class="closed-green">定休日</div></td>
+    <td><div class="date">15</div><div class="shift" data-coach="徳原"><span class="name">徳原コーチ</span><br><span class="time">10〜21</span></div></td>
+    <td><div class="date">16</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜16</span></div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">16〜21</span></div></td>
+    <td><div class="date">17</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜21</span></div></td>
+    <td><div class="date">18</div><div class="shift" data-coach="徳原"><span class="name">徳原コーチ</span><br><span class="time">10〜16</span></div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">16〜21</span></div></td>
+    <td class="sat"><div class="date">19</div><div class="shift" data-coach="筒井"><span class="name">筒井コーチ</span><br><span class="time">10〜15</span></div><div class="shift" data-coach="徳原"><span class="name">徳原コーチ</span><br><span class="time">15〜20</span></div></td>
+  </tr>
+  <tr>
+    <td class="sun"><div class="date">20</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜15</span></div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">15〜20</span></div></td>
+    <td><div class="date">21</div><div class="closed-green">定休日</div></td>
+    <td><div class="date">22</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜21</span></div></td>
+    <td><div class="date">23</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜16</span></div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">16〜21</span></div></td>
+    <td><div class="date">24</div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">10〜16</span></div><div class="shift" data-coach="徳原"><span class="name">徳原コーチ</span><br><span class="time">16〜21</span></div></td>
+    <td><div class="date">25</div><div class="shift" data-coach="徳原"><span class="name">徳原コーチ</span><br><span class="time">10〜16</span></div><div class="shift" data-coach="鳥居"><span class="name">鳥居コーチ</span><br><span class="time">16〜21</span></div></td>
+    <td class="sat"><div class="date">26</div><div class="shift" data-coach="筒井"><span class="name">筒井コーチ</span><br><span class="time">10〜15</span></div><div class="shift" data-coach="徳原"><span class="name">徳原コーチ</span><br><span class="time">15〜20</span></div></td>
+  </tr>
+  <tr>
+    <td class="sun"><div class="date">27</div><div class="event">打ち納めコンペ</div><div class="closed">休業日</div></td>
+    <td><div class="date">28</div><div class="closed-green">定休日</div></td>
+    <td><div class="date">29</div><div class="shift" data-coach="影山"><span class="name">影山コーチ</span><br><span class="time">10〜21</span></div></td>
+    <td><div class="date">30</div><div class="closed">休業日</div></td>
+    <td><div class="date">31</div><div class="closed">休業日</div></td>
+    <td class="dim"></td>
+    <td class="dim"></td>
+  </tr>
+</table>
+</div>
+
+<footer>GOLF STUDIO SHADOW（大阪・生野区）</footer>
+
+<script>
+  var filters = document.getElementById('filters');
+  filters.addEventListener('click', function (e) {
+    var btn = e.target.closest('button');
+    if (!btn) return;
+    filters.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var coach = btn.getAttribute('data-coach');
+    document.querySelectorAll('.shift').forEach(function (s) {
+      s.classList.toggle('hit', coach && s.getAttribute('data-coach') === coach);
+    });
+    document.body.classList.toggle('filtered', !!coach);
+  });
+</script>
+</body>
+</html>
